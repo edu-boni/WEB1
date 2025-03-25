@@ -1,0 +1,26 @@
+Sistema cliente/servidor
+
+                              Requisição
+                             ---------> 
+                            |           |
+                    CLIENTE |           |  SERVIDOR 
+                            |           |
+                             <-----------
+                              Resposta        
+
+- Todo conteúdo centrado no servidor; responsável por guardar todos os arquivos para acessar aplicação.
+- Rede peer to peer todos os clientes também funcionam como servidores; ao acessar os arquivos, se acessa toda a rede.  
+- No fim do processamento do servidor, sempre haverá a formação de um HTML pronto; ele retornará este HTML. 
+
+Páginas Estáticas
+- São páginas da web que são entregues ao navegador exatamente como são armazenadas no servidor web;
+- Não envolve nenhu  processamento no lado do servidor antes de ser enviada. 
+
+Páginas Dinâmicas
+- São construídas sob demanda no lado do servidor;
+- Interações personalizadas com os usuários;
+- Geração de conteúdo dinâmico;
+- Experiência mais interativa. 
+
+Porta padrão:
+- HTTP -> 80
