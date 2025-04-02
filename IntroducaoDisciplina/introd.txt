@@ -24,3 +24,10 @@ Páginas Dinâmicas
 
 Porta padrão:
 - HTTP -> 80
+- Tomcat abre a porta (uma das maneiras) -> container que 'abre o caminho para as requisições; é uma aplicação JAVA.
+
+Servets
+- São classes JAVA gerenciados por um container (Tomcat) que recebe requisições HTTP do servidor, as processa e as 
+responde ao cliente, gerando, portanto, uma RESPOSTA DINÂMICA.
+
+- Input / Output 
