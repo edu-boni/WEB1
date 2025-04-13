@@ -9,4 +9,34 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>aaa</display-name>
+    <servlet-name>aaa</servlet-name>
+    <servlet-class>br.edu.ifsp.arq.aaa</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>aaa</servlet-name>
+    <url-pattern>/aaa</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteLivroServlet</display-name>
+    <servlet-name>DeleteLivroServlet</servlet-name>
+    <servlet-class>br.edu.ifsp.arq.DeleteLivroServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteLivroServlet</servlet-name>
+    <url-pattern>/DeleteLivroServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateLivroServlet</display-name>
+    <servlet-name>UpdateLivroServlet</servlet-name>
+    <servlet-class>br.edu.ifsp.arq.UpdateLivroServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateLivroServlet</servlet-name>
+    <url-pattern>/UpdateLivroServlet</url-pattern>
+  </servlet-mapping>
 </web-app>
