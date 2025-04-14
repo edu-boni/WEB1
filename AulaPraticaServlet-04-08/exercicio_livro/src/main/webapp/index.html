@@ -2,23 +2,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Formulário</title>
+<title>Cadastrar livro</title>
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
+<h1>Cadastrar livro</h1>
 	<form action="criar-livro" method="POST">
-		<label for="titulo">Título do livro:</label> <input type="text"
-			id="titulo" name="titulo"><br>
-		<br> <label for="autor">Autor:</label> <input id="autor"
-			name="autor"></input><br>
-		<br> <input type="checkbox" id="ficcao" name="generos"
-			value="ficcao"> <label for="ficcao">Ficção</label><br>
-		<br> <input type="checkbox" id="naoficcao" name="generos"
-			value="naoficcao"> <label for="naoficcao">Não-Ficção</label><br>
-		<br> <input type="checkbox" id="fantasia" name="generos"
-			value="fantasia"> <label for="fantasia">Fantasia</label><br>
-		<br> <input type="checkbox" id="romance" name="generos"
-			value="romance"> <label for="romance">Romance</label><br>
-		<br>
+		<label for="titulo">Título do livro:</label> 
+		<input type="text" id="titulo" name="titulo" required><br><br> 
+		<label for="autor">Autor:</label> 
+		<input type="text" id="autor" name="autor" required></input><br> <br> 
+		
+		<input type="checkbox" id="ficcao" name="generos" value="ficcao"> 
+		<label for="ficcao">Ficção</label><br><br> 
+		<input type="checkbox" id="naoficcao" name="generos" value="naoficcao"> 
+		<label for="naoficcao">Não-Ficção</label><br><br> 
+		<input type="checkbox" id="fantasia" name="generos" value="fantasia"> 
+		<label for="fantasia">Fantasia</label><br> <br> 
+		<input type="checkbox" id="romance" name="generos" value="romance"> 
+		<label for="romance">Romance</label><br> <br>
 
 		<button type="submit">Salvar</button>
 	</form>

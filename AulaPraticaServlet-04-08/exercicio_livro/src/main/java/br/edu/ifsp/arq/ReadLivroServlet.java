@@ -30,7 +30,7 @@ public class ReadLivroServlet extends HttpServlet {
 		ArrayList<Livro> listaLivros = (ArrayList<Livro>) getServletContext().getAttribute("lista_livros");
 		
 		PrintWriter out = resp.getWriter();
-		out.print("<html><head><title>Lista de Livros</title></head><body>");
+		out.print("<head><title>Lista de Livros</title><link rel='stylesheet' href='estilo.css'></head>");
 		out.print("<h1>Livros Cadastrados</h1>");
 		
 		out.print("<table border='1'>");

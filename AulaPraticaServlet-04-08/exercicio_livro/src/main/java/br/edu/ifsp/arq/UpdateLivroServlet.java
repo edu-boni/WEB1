@@ -37,14 +37,14 @@ public class UpdateLivroServlet extends HttpServlet {
                 if (livro != null) {
                     response.setContentType("text/html");
                     PrintWriter out = response.getWriter();
-                    out.print("<html><head><title>Editar Livro</title></head><body>");
+                    out.print("<head><title>Editar Livro</title><link rel='stylesheet' href='estilo.css'></head>");
                     out.print("<h1>Editar Livro</h1>");
                     out.print("<form action='atualizar-livro' method='post'>");
                     out.print("<input type='hidden' name='id' value='" + livro.getId() + "' />");
                     out.print("<label for='titulo'>Título do livro:</label> ");
                     out.print("<input type='text' id='titulo' name='titulo' value='" + livro.getTitulo() + "'><br><br>");
                     out.print("<label for='autor'>Autor:</label> ");
-                    out.print("<input id='autor' name='autor' value='" + livro.getAutor() + "'></input><br><br>");
+                    out.print("<input type='text' id='autor' name='autor' value='" + livro.getAutor() + "'></input><br><br>");
 
                     out.print("<input type='checkbox' id='ficcao' name='generos' value='ficcao'");
                     if (livro.getGeneros().contains("ficcao")) out.print(" checked");
@@ -67,12 +67,8 @@ public class UpdateLivroServlet extends HttpServlet {
                     out.print("<br><br>");
                     out.print("<a href='listar-livros'>Voltar para a lista de livros</a>");
                     out.print("</body></html>");
-                } else {
-                    response.sendError(HttpServletResponse.SC_NOT_FOUND, "Livro não encontrado");
                 }
             }
-        } else {
-            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "ID não fornecido");
         }
     }
 
@@ -107,8 +103,6 @@ public class UpdateLivroServlet extends HttpServlet {
                 }
             }
             response.sendRedirect("listar-livros");
-        } else {
-            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Dados incompletos");
         }
     }
 }
